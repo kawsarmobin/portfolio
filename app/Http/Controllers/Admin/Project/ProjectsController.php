@@ -16,7 +16,7 @@ class ProjectsController extends Controller
     public function index()
     {
         return view('admin.project.index')
-                ->with('projects', Project::all())
+                ->with('projects', Project::latest()->get())
                 ->with('categories', Category::all());
     }
 
@@ -33,8 +33,7 @@ class ProjectsController extends Controller
         $this->validate($request, [
             'category_id' => 'required',
             'title' => 'required|min:3|max:50',
-            'technologies_use' => 'required|min:3|max:50',
-            'url_1' => 'required|url',
+            'technologies_use' => 'required|min:3|max:191',
             'sort_desc' => 'required|min:3|max:500',
             'is_publish' => 'required',
         ]);
@@ -84,8 +83,7 @@ class ProjectsController extends Controller
         $this->validate($request, [
             'category_id' => 'required',
             'title' => 'required|min:3|max:50',
-            'technologies_use' => 'required|min:3|max:50',
-            'url_1' => 'required|url',
+            'technologies_use' => 'required|min:3|max:191',
             'sort_desc' => 'required|min:3|max:500',
             'is_publish' => 'required',
         ]);

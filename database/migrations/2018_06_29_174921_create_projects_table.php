@@ -22,8 +22,8 @@ class CreateProjectsTable extends Migration
             $table->string('title');
             $table->string('slug');
             $table->string('technologies_use');
-            $table->string('url_1');
-            $table->string('url_2');
+            $table->string('url_1')->nullable();
+            $table->string('url_2')->nullable();
             $table->text('sort_desc');
             $table->boolean('is_publish')->default(Project::UNPUBLISHED);
 
