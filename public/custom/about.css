@@ -1,0 +1,50 @@
+#about .profile-pic {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    border-radius: 100%;
+}
+
+.social ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0 30px;
+    overflow: hidden;
+}
+li {
+     float:left;
+}
+
+li a {
+    color: white;
+    text-align: center;
+    padding: 20px;
+    text-decoration: none;
+}
+
+li a:hover {
+    color: #111111;
+}
+
+hr {
+    border: 1px solid white;
+    margin:30px 0 15px;
+    padding: inherit;
+}
+
+.address p {
+    color:black;
+    font-size: 15px
+}
+
+p a {
+    text-decoration: none;
+    color:black;
+    font-size: 15px
+}
+
+p a:hover{
+    color: white;
+    text-decoration: none;
+}
