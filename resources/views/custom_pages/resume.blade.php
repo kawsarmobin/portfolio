@@ -1,8 +1,8 @@
 <div id="resume" >
     <div class="container-fluid bg-secondary text-black"style="background-color: #4d4f50; padding: 0">
-        <div class="container-fluid text-black"style="background-color: #4d4f50; color: white">
+        <div class="container-fluid text-black"style="background-color: #4d4f50; color: white;">
 
-            <div class="row" style="background: #252934">
+            <div class="row" style="background: #252934; padding: 50px 0 20px 0">
                 <!-- Education -->
                 <div class="col-sm-4">
                     <h2 class="second">Education</h2>
