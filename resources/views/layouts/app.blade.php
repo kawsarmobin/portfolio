@@ -12,6 +12,7 @@
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <script src="{{ asset('js/particles.js') }}"></script>
 </head>
 <body>
     <div id="app">
@@ -75,5 +76,12 @@
 
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}"></script>
+
+    <script type="text/javascript">
+        /* particlesJS.load(@dom-id, @path-json, @callback (optional)); */
+        particlesJS.load('particles-js', '{{ asset('assets/particles.json') }}', function() {
+        console.log('callback - particles.js config loaded');
+        });
+    </script>
 </body>
 </html>

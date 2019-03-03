@@ -24,7 +24,7 @@
     <link href="{{ asset('custom/resume.css') }}" rel="stylesheet" type="text/css">
     <!-- Custom styles for this template -->
     <link href="{{ asset('app/css/agency.min.css') }}" rel="stylesheet">
-
+<script src="{{ asset('js/particles.js') }}"></script>
     <style media="screen">
     .progress-bar {
         display: -ms-flexbox;
@@ -48,7 +48,7 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
         <div class="container">
-          <a class="navbar-brand js-scroll-trigger" href="#page-top">Kawsar</a>
+          <a class="navbar-brand js-scroll-trigger" href="#page-top">Kawsar Mobin Rubel</a>
             <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                 Menu
                 <i class="fa fa-bars"></i>
@@ -389,7 +389,7 @@
                                         <li>{{ $proje->created_at->toFormattedDateString() }}</li> <br>
                                         <li>Category: {{$proje->category->name}}</li> <br>
                                         <li>Technology: {{$proje->technologies_use}}</li> <br>
-                                        <li>URL: {{$proje->url_1}}</li> <br> 
+                                        <li>URL: {{$proje->url_1}}</li> <br>
                                         <li>URL: {{$proje->url_2}}</li> <br>
                                        {{-- <li><a target href="{{$proje->url_1}}">URL: {{$proje->url_1}}</a></li> --}}
                                     </ul>
@@ -438,7 +438,12 @@
 
     <!-- Custom scripts for this template -->
     <script src="{{ asset('app/js/agency.min.js') }}"></script>
-
+    <script type="text/javascript">
+        /* particlesJS.load(@dom-id, @path-json, @callback (optional)); */
+        particlesJS.load('particles-js', '{{ asset('assets/particles.json') }}', function() {
+        console.log('callback - particles.js config loaded');
+        });
+    </script>
 </body>
 
 </html>
