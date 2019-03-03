@@ -2,7 +2,7 @@
   <div class="container">
     <div class="row">
       <div class="col-md-12" style="text-align:center">
-        <span class="copyright">Copyright &copy; KAWSAR MOBIN RUBEL 2018</span>
+        <span class="copyright">Copyright &copy; KAWSAR MOBIN RUBEL 2019</span>
       </div>
       <div class="col-md-4">
         {{-- <ul class="list-inline social-buttons">
