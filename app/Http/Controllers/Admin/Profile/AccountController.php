@@ -2,13 +2,12 @@
 
 namespace App\Http\Controllers\Admin\Profile;
 
+use Auth;
+use Session;
+use App\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Hash;
 use App\Http\Controllers\Controller;
-
-use Auth;
-use App\User;
-use Session;
 
 class AccountController extends Controller
 {
